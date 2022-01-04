@@ -10,3 +10,9 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+store_name = gets.chomp
+s7 = Store.create(name: store_name)
+
+s7.errors.full_messages.each do |err|
+  puts err
+end
